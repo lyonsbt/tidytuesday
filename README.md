@@ -6,5 +6,4 @@ Weekly data explorations in R, using the
 
 | Week | Topic | What I found | Chart |
 |------|-------|--------------|-------|
-
-
+| TBC | TBC | TBC | TBC |
