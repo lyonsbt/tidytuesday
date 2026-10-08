@@ -7,5 +7,4 @@ Weekly data explorations in R, using the
 |------|-------|--------------|-------|
 | TBC | TBC | TBC | TBC |
 
-This is a repository for my tidytuesday data analysis, using R
 
