@@ -1,0 +1,89 @@
+---
+title: "#TidyTuesday - DD/MM/YYYY"
+subtitle: "[DATA DESCRIPTION HERE]"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  include = TRUE,
+  dpi=150, 
+  out.width="100%", 
+  fig.width=9, 
+  fig.asp=0.55, 
+  fig.retina=1,
+  fig.align="center"
+  )
+
+# Load required packages
+# library(lmtest)
+# library(car)
+ library(tidyverse) 
+# library(skimr) # Used for the skim function
+# library(dlookr) # Used for the diagnose_outlier function
+# library(summarytools) # Used for descr - 5 nunber summary and Skewness, Kurtosis
+# library(readxl) # Used for the read_excel function
+# library(caret) # Used for Confusion Matrix
+# library(corrplot)
+library(kableExtra) # Used to customise the styling of some outputs, for cleaner integration into the powerpoint
+# library(GGally) # For scatterplot matrix to complement the correlation analysis 
+library(dplyr)
+library(magrittr)
+library(ggplot2)
+library(mice) # imputations
+library(missForest) #imputations and induce missing values
+library(Amelia) # imputations
+
+# Descriptive Statistics
+library(Hmisc)
+library(pastecs)
+library(psych)
+library(PairedData) # Visualisation for paired data
+
+# Visualisation
+library(cowplot) # Add-in to ggplot: to arrange plots into a grid etc.
+library(ggthemes)
+
+# Clustering
+library(factoextra) # Create visualisations specific to clustering operations
+library(cluster)   # PAM etc.
+library(dendextend) # Comparing Dendrograms
+library(fpc) # Density-based clustering
+library(dbscan) # Density-based clustering 
+
+# Text Mining
+library(stringr)
+library(tidytext)
+library(tm)
+library(forcats) # e.g. fct_inorder
+library(wordcloud)
+library(reshape2) # e.g. for wordcloud sentiment
+library(textdata) # for AFINN sentiment analysis
+
+# TidyTuesday
+library(tidytuesdayR)
+library(usethis)
+library(gitcreds)
+
+
+theme_set(
+  theme_bw()
+)
+
+```
+
+```{r load data}
+
+tt <- tidytuesdayR::tt_load("2026-10-06")
+df_bottles <- tt[[1]]
+df_foods <- tt[[2]]
+
+readme(tt)
+
+```
+
+
+
+
+
