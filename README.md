@@ -1,4 +1,3 @@
-
 # tidytuesday
 
 Weekly data explorations in R, using the
@@ -7,3 +6,6 @@ Weekly data explorations in R, using the
 | Week | Topic | What I found | Chart |
 |------|-------|--------------|-------|
 | TBC | TBC | TBC | TBC |
+
+This is a repository for my tidytuesday data analysis, using R
+
