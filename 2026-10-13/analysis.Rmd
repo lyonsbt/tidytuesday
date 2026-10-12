@@ -1,6 +1,6 @@
 ---
-title: "#TidyTuesday - DD/MM/YYYY"
-subtitle: "[DATA DESCRIPTION HERE]"
+title: "#TidyTuesday - 2026, Week 41"
+subtitle: "AmphibiaWeb, Frogs and Toads"
 output: html_document
 ---
 
@@ -75,14 +75,17 @@ theme_set(
 
 ```{r load data}
 
-tt <- tidytuesdayR::tt_load("2026-10-06")
-df_bottles <- tt[[1]]
-df_foods <- tt[[2]]
-
+tt_available
+tt <- tidytuesdayR::tt_load("2026-10-13")
 readme(tt)
 
 ```
 
+```{r}
+
+df <- tt$frogs_and_toads_amphibiaweb
+
+```
 
 
 

@@ -75,14 +75,16 @@ theme_set(
 
 ```{r load data}
 
-tt <- tidytuesdayR::tt_load("2026-10-06")
-df_bottles <- tt[[1]]
-df_foods <- tt[[2]]
-
+tt <- tidytuesdayR::tt_load("2026-10-13")
 readme(tt)
 
 ```
 
+```{r}
+
+df <- tt$frogs_and_toads_amphibiaweb
+
+```
 
 
 
